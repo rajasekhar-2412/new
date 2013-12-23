@@ -1,0 +1,58 @@
+<script>
+.container {
+  position: relative;
+}
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+.body {
+  margin-bottom: 120px;
+  background-color: blue;
+}
+head {
+  margin-bottom: 120px;
+}
+</script>
+
+<html>
+	<head>
+		<table width="50%" align="center" border="2">
+			
+			<th align="center">Welcome To Page</th>	
+			
+		</table> 
+		
+	</head>
+	<body bgcolor="#E6E6FA">
+		<div class="container">
+		<table width="100%">
+			<tr>
+			<td><%=link_to 'Home', trains_path%></td>
+			<td align="right"><%=link_to "My Account", edit_user_registration_path %></td>		
+			</tr>
+			<tr>
+			<td><%=link_to 'New', new_train_path%></td>	
+			</tr>
+			<tr>
+			<td><%=link_to 'Sign Out', destroy_user_session_path%></td>	
+			</tr>
+			</table>
+    </div>
+	</body>
+	
+	
+</html>

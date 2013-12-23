@@ -1,0 +1,23 @@
+<%= form_for(@train) do |t| %>
+<%= render "shared/error_messages", :target => @train %>
+<div class="field">
+<%= t.label :name, 'Name'%><%= mark_required(@train, :name) %><br />  
+<%= t.text_field :name%>
+</div>
+ <div class="field">
+		<%= t.label :number, 'Number'%><%= mark_required(@train, :number) %><br />  
+	<%= t.text_field :number%>
+</div>
+ <div class="field">
+	<%= t.label :from, 'From'%><%= mark_required(@train, :from) %><br />  
+	<%= t.text_field :from%>
+</div>
+ <div class="field">
+	<%= t.label :to, 'To'%><%= mark_required(@train, :to) %><br />  
+	<%= t.text_field :to%>
+</div>
+<div class="actions">
+	<%= t.submit %>	
+</div>
+
+<% end %>
