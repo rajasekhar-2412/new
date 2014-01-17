@@ -71,9 +71,9 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
-    mysql2 (0.3.14)
     nifty-generators (0.4.6)
     orm_adapter (0.4.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-contrib (1.1.0)
@@ -147,7 +147,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-
   better_errors
   binding_of_caller
   coffee-rails (~> 4.0.0)
@@ -155,8 +154,8 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   meta_request
-  mysql2 (> 0.3)
   nifty-generators
+  pg
   rails (= 4.0.0)
   rails_12factor
   sass-rails (~> 4.0.0)
