@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 <p>Welcome <%= @email %>!</p>
 
 <p>You can confirm your account email through the link below:</p>
+=======
+<p>Welcome <%= @resource.email %>!</p>
+<%# raise confirmation_url.inspect%>
+<p>You can confirm your account through the link below:</p>
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>

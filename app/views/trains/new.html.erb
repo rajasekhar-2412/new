@@ -1,0 +1,61 @@
+<script>
+.container {
+  position: relative;
+}
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+body {
+  margin-bottom: 120px;
+}	
+</script>
+
+<html>
+	<div class="nav">
+	<head>
+		<table width="50%" border="2" align="center">
+			
+			<th align="center">Enter New Train Details</th>	
+			</table> 
+		
+		<table width="100%">
+			<th align="right"><%=link_to 'Sign Out', destroy_user_session_path%></th>
+		</table>
+			
+		
+	</head>
+	<br />
+	<body >
+
+<% if @errors && @errors.any? 
+   @errors.each_full { |msg| puts msg }
+   end %>
+			
+<%= render "form"%>
+ 	
+	</body>
+	
+	</div>
+	
+<table>
+	<tr>
+		<td>
+			<%=link_to 'Back',trains_path%>
+		</td>
+	</tr>
+</table>
+</html>

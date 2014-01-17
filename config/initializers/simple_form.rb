@@ -5,8 +5,13 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
+<<<<<<< HEAD
   config.wrappers :default, class: :input,
     hint_class: :field_with_hint, error_class: :field_with_errors do |b|
+=======
+  config.wrappers :default, :class => :input,
+    :hint_class => :field_with_hint, :error_class => :field_with_errors do |b|
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
     ## Extensions enabled by default
     # Any of these extensions can be disabled for a
     # given input by passing: `f.input EXTENSION_NAME => false`.
@@ -18,7 +23,11 @@ SimpleForm.setup do |config|
     b.use :html5
 
     # Calculates placeholders automatically from I18n
+<<<<<<< HEAD
     # You can also pass a string as f.input placeholder: "Placeholder"
+=======
+    # You can also pass a string as f.input :placeholder => "Placeholder"
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
     b.use :placeholder
 
     ## Optional extensions
@@ -41,8 +50,13 @@ SimpleForm.setup do |config|
 
     ## Inputs
     b.use :label_input
+<<<<<<< HEAD
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
+=======
+    b.use :hint,  :wrap_with => { :tag => :span, :class => :hint }
+    b.use :error, :wrap_with => { :tag => :span, :class => :error }
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
   end
 
   # The default wrapper to be used by the FormBuilder.
@@ -50,8 +64,13 @@ SimpleForm.setup do |config|
 
   # Define the way to render check boxes / radio buttons with labels.
   # Defaults to :nested for bootstrap config.
+<<<<<<< HEAD
   #   inline: input + label
   #   nested: label > input
+=======
+  #   :inline => input + label
+  #   :nested => label > input
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
   config.boolean_style = :nested
 
   # Default class for buttons
@@ -106,11 +125,16 @@ SimpleForm.setup do |config|
   # Whether attributes are required by default (or not). Default is true.
   # config.required_by_default = true
 
+<<<<<<< HEAD
   # Tell browsers whether to use the native HTML5 validations (novalidate form option).
   # These validations are enabled in SimpleForm's internal config but disabled by default
   # in this configuration, which is recommended due to some quirks from different browsers.
   # To stop SimpleForm from generating the novalidate option, enabling the HTML5 validations,
   # change this configuration to true.
+=======
+  # Tell browsers whether to use default HTML5 validations (novalidate option).
+  # Default is enabled.
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
   config.browser_validations = false
 
   # Collection of methods to detect if a file type was given.
@@ -123,7 +147,11 @@ SimpleForm.setup do |config|
 
   # Custom wrappers for input types. This should be a hash containing an input
   # type as key and the wrapper that will be used for all inputs with specified type.
+<<<<<<< HEAD
   # config.wrapper_mappings = { string: :prepend }
+=======
+  # config.wrapper_mappings = { :string => :prepend }
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
 
   # Default priority for time_zone inputs.
   # config.time_zone_priority = nil
@@ -131,6 +159,12 @@ SimpleForm.setup do |config|
   # Default priority for country inputs.
   # config.country_priority = nil
 
+<<<<<<< HEAD
+=======
+  # Default size for text inputs.
+  # config.default_input_size = 50
+
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
   # When false, do not use translations for labels.
   # config.translate_labels = true
 
@@ -139,7 +173,10 @@ SimpleForm.setup do |config|
 
   # Cache SimpleForm inputs discovery
   # config.cache_discovery = !Rails.env.development?
+<<<<<<< HEAD
 
   # Default class for inputs
   # config.input_class = nil
+=======
+>>>>>>> 4a8ce979fa08b275175a00818938acf83923a916
 end
