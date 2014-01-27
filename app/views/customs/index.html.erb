@@ -1,0 +1,29 @@
+<h1>Listing customs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Fields</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customs.each do |custom| %>
+      <tr>
+        <td><%= custom.user_id %></td>
+        <td><%= custom.fields %></td>
+        <td><%= link_to 'Show', custom ,class: "button"%></td>
+        <td><%= link_to 'Edit', edit_custom_path(custom),class: "button" %></td>
+        <td><%= link_to 'Destroy', custom, method: :delete, data: { confirm: 'Are you sure?' },class: "large red awesome" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Custom', new_custom_path,class: "button" %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @custom.user_id %>
+</p>
+
+<p>
+  <strong>Fields:</strong>
+  <%= @custom.fields %>
+</p>
+
+<%= link_to 'Edit', edit_custom_path(@custom) %> |
+<%= link_to 'Back', customs_path %>
