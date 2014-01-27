@@ -6,7 +6,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: bookmarks
+  database: bookmark
   username: postgres
   password: postgres
   host: localhost

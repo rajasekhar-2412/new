@@ -5,7 +5,8 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = Bookmark.all
+    @bookmarks = current_user.bookmarks
+    @custom = current_user.try(:customs).try(:last).try(:fields) || []
   end
 
   # GET /bookmarks/1
@@ -16,6 +17,8 @@ class BookmarksController < ApplicationController
   # GET /bookmarks/new
   def new
     @bookmark = Bookmark.new
+    @custom_fields = current_user.try(:custom_requirements)  || []
+    #raise @custom_fields.inspect
   end
 
   # GET /bookmarks/1/edit
@@ -25,12 +28,15 @@ class BookmarksController < ApplicationController
   # POST /bookmarks
   # POST /bookmarks.json
   def create
+    #raise params.inspect
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.user_id = current_user.id
+       #raise params[:custom].inspect
 
     respond_to do |format|
       if @bookmark.save
-        format.html { redirect_to @bookmark, notice: 'Bookmark was successfully created.' }
+        @custom = Custom.create(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)  if params[:custom]
+        format.html { redirect_to @bookmark, notice: 'Book marks created successfully.' }
         format.json { render action: 'show', status: :created, location: @bookmark }
       else
         format.html { render action: 'new' }

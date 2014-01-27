@@ -2,28 +2,39 @@
 
 <table>
   <thead>
-    <tr>
-      <th>Title</th>
-      <th>Url</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <% @custom.each do |k,v| %>
+        <th><%= k%></th>
+    <% end %>
+    <th></th>
+    <th></th>
+    <th></th>
+
+  </tr>
   </thead>
 
   <tbody>
-    <% @bookmarks.each do |bookmark| %>
+  <% @bookmarks.each do |bookmark| %>
       <tr>
         <td><%= bookmark.title %></td>
         <td><%= bookmark.url %></td>
-        <td><%= link_to 'Show', bookmark, class: "button" %></td>
-        <td><%= link_to 'Edit', edit_bookmark_path(bookmark), class: "button" %></td>
-        <td><%= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' }, class: "large red awesome" %></td>
+        <% if bookmark.custom%>
+            <% bookmark.custom.fields.each do|k,v|%>
+                <td><%= v%></td>
+            <%end%>
+        <%end%>
+        <td><%= link_to 'Show', bookmark, class: "button blue awesome" %></td>
+        <td><%= link_to 'Edit', edit_bookmark_path(bookmark), class: " button blue awesome" %></td>
+        <td><%= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"button red awesome" %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Bookmark', new_bookmark_path, class: "button" %>
+<%= link_to 'New Bookmark', new_bookmark_path, class: "button yellow awesome" %>
+
+<%= link_to 'New Custom Field', new_custom_path, class: "button green awesome" %>

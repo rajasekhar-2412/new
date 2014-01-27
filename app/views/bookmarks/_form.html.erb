@@ -1,6 +1,5 @@
 <%= simple_form_for(@bookmark) do |f| %>
     <%= f.error_notification %>
-
     <div class="form-inputs">
       <%= f.input :title %>
       <%= f.input :url %>
@@ -14,7 +13,13 @@
       <%= f.input :is_shared, :label => "Is Shared" %>
     </div>
 
+        <% @custom_fields.each do |a|%>
+     <%= fields_for :custom do |c| %>
+          <%= a.name%> : <%= c.text_field "#{a.name}".to_sym%>
+        <% end %>
+    <% end %>
     <div class="form-actions">
       <%= f.button :submit %>
     </div>
 <% end %>
+

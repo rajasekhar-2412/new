@@ -33,7 +33,9 @@
             <!-- Title Area -->
             <li class="name">
               <h1><a href="/">MyBookmarks</a></h1>
+
             </li>
+
             <li class="toggle-topbar menu-icon">
               <a href="#">Menu</a>
             </li>
@@ -41,8 +43,12 @@
 
           <section class="top-bar-section">
             <!-- Right Nav Section -->
+             <ul class="left">
+               <li class="name"> <%= link_to 'Users', profiles_path %>  </li>
+             </ul>
             <ul class="right">
               <li class="divider"></li>
+
               <% if current_user %>
                   <li><%= link_to 'New Bookmarks', bookmarks_path %></li>
                   <li class="divider"></li>
@@ -50,7 +56,7 @@
                   <li class="divider"></li>
 
                   <li class="has-dropdown">
-                    <%= link_to current_user.email, '#'%>
+                    <%= link_to current_user.username, '#'%>
                     <ul class="dropdown">
                       <li><%= link_to 'Profile', edit_user_registration_path %></li>
                       <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>

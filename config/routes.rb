@@ -1,5 +1,7 @@
 
 BookmarkApplication::Application.routes.draw do
+  resources :customs
+  resources :profiles
   resources :categories
 
   get "site/index"
