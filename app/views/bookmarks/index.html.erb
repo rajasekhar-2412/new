@@ -31,7 +31,7 @@
                 <% end %>
         <%end%>
         <td><%= link_to 'Show', bookmark, class: "button blue awesome" %></td>
-        <td><%= link_to 'Edit', edit_bookmark_path(bookmark), class: " button blue awesome", @fields => bookmark.custom.fields %></td>
+        <td><%= link_to 'Edit', edit_bookmark_path(bookmark), class: " button blue awesome", @fields => bookmark.try(:custom).try(:fields) %></td>
         <td><%= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"button red awesome" %></td>
       </tr>
   <% end %>
