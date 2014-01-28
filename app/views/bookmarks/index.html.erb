@@ -47,3 +47,6 @@
 <%= link_to 'New Bookmark', new_bookmark_path, class: "button yellow awesome" %>
 
 <%= link_to 'New Custom Field', new_custom_path, class: "button green awesome" %>
+
+
+<%= paginate @bookmarks, :window => 2%>

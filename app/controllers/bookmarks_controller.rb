@@ -5,7 +5,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = current_user.bookmarks
+    @bookmarks = current_user.bookmarks.page params[:page]
     @custom = current_user.try(:customs).try(:last).try(:fields) || []
   end
 
