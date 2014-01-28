@@ -16,7 +16,7 @@
         <% @custom_fields.each do |a|%>
      <%= fields_for :custom do |c| %>
             <%#raise params.inspect%>
-          <%= a.name%> : <%= c.text_field "#{a.name}".to_sym, :value => params[:action] == 'edit' ? @bookmark.custom.fields[a.name] : ''%>
+          <%= a.name%> : <%= c.text_field "#{a.name}".to_sym, :value => params[:action] == 'edit' && @bookmark.custom ? @bookmark.try(:custom).try(:fields)[a.name] : ''%>
         <% end %>
     <% end %>
     <div class="form-actions">

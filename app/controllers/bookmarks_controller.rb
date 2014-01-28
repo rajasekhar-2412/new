@@ -52,7 +52,11 @@ class BookmarksController < ApplicationController
   def update
     respond_to do |format|
       if @bookmark.update(bookmark_params)
-         @custom = @bookmark.custom.update(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
+          if @bookmark.custom
+            @custom = @bookmark.custom.update(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
+          else
+            @custom = Custom.create(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
+          end
         format.html { redirect_to @bookmark, notice: 'Bookmark was successfully updated.' }
         format.json { head :no_content }
       else

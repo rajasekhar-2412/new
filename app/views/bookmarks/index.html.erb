@@ -22,13 +22,17 @@
         <% if bookmark.custom%>
             <%a=0%>
             <% @custom.keys.count.times do %>
-            <%if bookmark.custom.fields.has_key?(@custom.keys[a])%>
-                <td><%= bookmark.custom.fields[@custom.keys[a]]%></td>
+                <%if bookmark.custom.fields.has_key?(@custom.keys[a])%>
+                    <td><%= bookmark.custom.fields[@custom.keys[a]]%></td>
                 <%else%>
-            <td></td>
-            <%end%>
+                    <td></td>
+                <%end%>
                 <%a +=1%>
-                <% end %>
+            <% end %>
+        <% else %>
+            <% @custom.keys.count.times do %>
+                <td></td>
+            <%end%>
         <%end%>
         <td><%= link_to 'Show', bookmark, class: "button blue awesome" %></td>
         <td><%= link_to 'Edit', edit_bookmark_path(bookmark), class: " button blue awesome", @fields => bookmark.try(:custom).try(:fields) %></td>
