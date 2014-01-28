@@ -23,6 +23,7 @@ class BookmarksController < ApplicationController
 
   # GET /bookmarks/1/edit
   def edit
+    @custom_fields = current_user.try(:custom_requirements)  || []
   end
 
   # POST /bookmarks
@@ -39,7 +40,8 @@ class BookmarksController < ApplicationController
         format.html { redirect_to @bookmark, notice: 'Book marks created successfully.' }
         format.json { render action: 'show', status: :created, location: @bookmark }
       else
-        format.html { render action: 'new' }
+        @custom_fields = current_user.try(:custom_requirements)  || []
+        format.html { render action: 'new' ,@custom_fields => @custom_fields, notice: 'Please Review the following along with custom fields'}
         format.json { render json: @bookmark.errors, status: :unprocessable_entity }
       end
     end
@@ -50,6 +52,7 @@ class BookmarksController < ApplicationController
   def update
     respond_to do |format|
       if @bookmark.update(bookmark_params)
+         @custom = @bookmark.custom.update(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
         format.html { redirect_to @bookmark, notice: 'Bookmark was successfully updated.' }
         format.json { head :no_content }
       else

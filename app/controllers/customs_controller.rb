@@ -31,7 +31,7 @@ class CustomsController < ApplicationController
         format.html { redirect_to new_bookmark_path, notice: 'Please Create Your Bookmark along with Your Custom Fields.' }
         format.json { render action: 'show', status: :created, location: @custom }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to new_custom_path, notice: 'Please Fill Required Custom Name' }
         format.json { render json: @custom.errors, status: :unprocessable_entity }
       end
     end
