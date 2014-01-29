@@ -27,7 +27,7 @@ BookmarkApplication::Application.configure do
       authentication: "plain",
       enable_starttls_auto: true,
       user_name: 'sekhar12345678@gmail.com',
-      password: 'sekhar!@#$%^&*'
+      password: '********'
   }
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
