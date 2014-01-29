@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'kaminari'  #pagination
 
+#gem 'gchartrb'
+
+gem 'chartkick'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 #gem 'mysql2','>0.3'

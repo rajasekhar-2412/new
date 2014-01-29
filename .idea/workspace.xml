@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f080597f-c76d-4597-9087-34eb885f644f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookmarks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/bookmarks/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/My_sample.iml" afterPath="$PROJECT_DIR$/.idea/My_sample.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/shared/_links.erb" afterPath="$PROJECT_DIR$/app/views/users/shared/_links.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/index.html.erb" afterPath="$PROJECT_DIR$/app/views/site/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/site_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/site_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bookmark-application-master.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/views/layouts/application.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390390309388" ignored="false" />
     <file path="/application.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390907566194" ignored="false" />
-    <file path="/index.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390973671669" ignored="false" />
+    <file path="/index.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390992483325" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/views/trains/index.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1389871070573" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/Gemfile" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1389873551306" ignored="false" />
     <file path="/database.yml" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390904689232" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/models/crawling.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1389868967578" ignored="false" />
-    <file path="/a.dummy" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390971746898" ignored="false" />
+    <file path="/a.dummy" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390992655133" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/views/layouts/_messages.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1389875017638" ignored="false" />
     <file path="/_messages.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1389875008457" ignored="false" />
     <file path="/Gemfile" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390919581303" ignored="false" />
@@ -25,7 +32,7 @@
     <file path="$USER_HOME$/Rubymineprojects/My_project/config/routes.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390201323343" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/views/site/index.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390390941401" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/controllers/site_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390204676585" ignored="false" />
-    <file path="/site_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390917504166" ignored="false" />
+    <file path="/site_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390991432315" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/controllers/application_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390201270019" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/app/controllers/tasks_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390201448405" ignored="false" />
     <file path="/tasks_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390201437252" ignored="false" />
@@ -42,7 +49,7 @@
     <file path="/setup_mail.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390393518220" ignored="false" />
     <file path="$USER_HOME$/Rubymineprojects/My_project/config/environments/development.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390393576995" ignored="false" />
     <file path="/development.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390920606582" ignored="false" />
-    <file path="/bookmarks_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390915487878" ignored="false" />
+    <file path="/bookmarks_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390991344329" ignored="false" />
     <file path="/customs_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390893651340" ignored="false" />
     <file path="/custom.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390564524779" ignored="false" />
     <file path="/custom_requirement.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390557751148" ignored="false" />
@@ -62,8 +69,8 @@
     <file path="$PROJECT_DIR$/../12dos-bookmarks-master/app/models/user.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390823225900" ignored="false" />
     <file path="$PROJECT_DIR$/../craiglist-master/config/database.yml" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390906485633" ignored="false" />
     <file path="$PROJECT_DIR$/../craiglist-master/Gemfile" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390915582581" ignored="false" />
-    <file path="/craig.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390906693298" ignored="false" />
-    <file path="$PROJECT_DIR$/../craiglist-master/app/models/craig.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390908708251" ignored="false" />
+    <file path="/craig.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390985509876" ignored="false" />
+    <file path="$PROJECT_DIR$/../craiglist-master/app/models/craig.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390985971995" ignored="false" />
     <file path="$PROJECT_DIR$/../craiglist-master/app/views/layouts/application.html.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390907566903" ignored="false" />
     <file path="$PROJECT_DIR$/../craiglist-master/config/routes.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390907561856" ignored="false" />
     <file path="$PROJECT_DIR$/../craiglist-master/db/schema.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390907561856" ignored="false" />
@@ -80,6 +87,9 @@
     <file path="$PROJECT_DIR$/../craiglist-master/app/controllers/sites_controller.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390915635124" ignored="false" />
     <file path="/production.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390920866762" ignored="false" />
     <file path="/404.html" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390971660571" ignored="false" />
+    <file path="$PROJECT_DIR$/../craiglist-master/app/models/site.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390976532150" ignored="false" />
+    <file path="/site.rb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390976508413" ignored="false" />
+    <file path="/_links.erb" changelist="f080597f-c76d-4597-9087-34eb885f644f" time="1390992719242" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +114,7 @@
       <file leaf-file-name="bookmarks_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="80" column="104" selection-start="2681" selection-end="2681" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,43 +123,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/bookmarks/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="56" selection-start="728" selection-end="728" vertical-scroll-proportion="0.50159234">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-30.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="422.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/422.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-35.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="500.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/500.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1253" selection-end="1253" vertical-scroll-proportion="-36.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="robots.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/robots.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+            <state line="51" column="2" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.8566879">
               <folding />
             </state>
           </provider>
@@ -158,7 +132,25 @@
       <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="53" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
+            <state line="32" column="71" selection-start="1134" selection-end="1148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookmark.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/bookmark.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="43" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,7 +177,25 @@
       <file leaf-file-name="site_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
+            <state line="4" column="64" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/site/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="67" selection-start="772" selection-end="772" vertical-scroll-proportion="-11.708333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_links.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -209,13 +219,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/customs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/bookmarks/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/bookmark.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
@@ -224,6 +229,11 @@
         <option value="$PROJECT_DIR$/public/500.html" />
         <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/site/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/shared/_links.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/bookmarks/index.html.erb" />
       </list>
     </option>
@@ -265,48 +275,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="My_sample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My_sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -608,6 +576,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
     <list size="6">
@@ -718,48 +688,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/bookmarks/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="169" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/production.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-30.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/422.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-35.625">
@@ -793,6 +721,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="10" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.5553822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/bookmark.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="43" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="2" selection-start="3452" selection-end="3452" vertical-scroll-proportion="0.0">
@@ -802,28 +744,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+        <state line="32" column="71" selection-start="1134" selection-end="1148" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="64" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/shared/_links.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.33251232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="67" selection-start="772" selection-end="772" vertical-scroll-proportion="-11.708333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="104" selection-start="2681" selection-end="2681" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bookmarks/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="728" selection-end="728" vertical-scroll-proportion="0.50159234">
+        <state line="51" column="2" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.8566879">
           <folding />
         </state>
       </provider>
