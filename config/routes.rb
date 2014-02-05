@@ -3,12 +3,21 @@ BookmarkApplication::Application.routes.draw do
   resources :customs
   resources :profiles
   resources :categories
+  resources :friendships
 
   get "site/index"
   get "site/about"
   devise_for :users
   resources :bookmarks
   resource :categories
+
+  get 'create_friend', to: "friendships#create_friend"
+  get 'delete_friend', to: "friendships#delete_friend"
+  get 'update_friend', to: "friendships#update_friend"
+  get 'friends', to: "friendships#friends"
+  get 'search_friend', to: "friendships#search_friend"
+  get 'notifications', to: "profiles#notifications"
+  get 'show_friends_bookmarks', to:"profiles#show_friends_bookmarks"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

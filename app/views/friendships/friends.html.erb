@@ -1,0 +1,61 @@
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<h2>Friends </h2>
+<table style="width: 100%">
+  <thead>
+  <tr>
+    <th>Friend</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @friends_sent.each do |friend| %>
+      <tr>
+        <td><%= friend.friend.username %></td>
+        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.friend_id}", :for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?"} %></td>
+      </tr>
+  <% end %>
+  <% @friends_approved.each do |friend| %>
+      <tr>
+        <td><%= friend.user.username %></td>
+        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.user.id}",:for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?" } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+    Search Friend:  <%= text_field_tag :search, params[:search] %>
+<p>
+  <%= submit_tag "Search", :name => nil %>
+</p>
+
+<div id="show_friends">
+</div>
+
+<script>
+    $("p").click(function()
+    {
+        var name = $( "#search" ).val();
+        if (name == ''){
+           alert('Please enter a name');
+            window.location.reload();
+        }
+        else {
+            $.ajax({
+                url: '/friendships/search_friend',
+                type: 'get',
+                dataType: 'html',
+                data: {"name" : name},
+                success: function(returnData){
+                    $("#show_friends").html(returnData);
+                },
+                error: function(e){
+                    alert(e);
+                }
+            });
+        }
+
+    })
+
+</script>

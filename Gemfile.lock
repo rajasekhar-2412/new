@@ -76,6 +76,8 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     nifty-generators (0.4.6)
+    numbers_in_words (0.2.0)
+      activesupport
     orm_adapter (0.4.0)
     pg (0.17.1)
     polyglot (0.3.3)
@@ -161,6 +163,7 @@ DEPENDENCIES
   kaminari
   meta_request
   nifty-generators
+  numbers_in_words
   pg
   rails (= 4.0.0)
   rails_12factor

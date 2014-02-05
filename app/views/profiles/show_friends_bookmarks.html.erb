@@ -1,0 +1,19 @@
+<h2>Bookmarks</h2>
+
+<table style="width: 100%">
+  <thead>
+  <tr>
+    <th># Bookmarks</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @bookmarks.each do |bookmark| %>
+      <tr>
+        <td><%= link_to bookmark.title,bookmark.url %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%#= paginate @users %>

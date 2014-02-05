@@ -50,7 +50,7 @@ group :development do
   gem 'meta_request'
   gem 'nifty-generators'
 end
-
+gem 'numbers_in_words'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

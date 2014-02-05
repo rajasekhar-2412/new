@@ -1,0 +1,20 @@
+<p id="notice"><%= @notice %></p>
+<h3>Showing Friends</h3>
+<table style="width: 100%">
+  <thead>
+  <tr>
+    <th>Friend</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @buddies.each do |buddy| %>
+      <tr>
+        <td><%= buddy.username %></td>
+        <td><%= link_to 'Add Friend',create_friend_path(:friend_id=> "#{buddy.id}"), data: {confirm: "Are You Sure?" } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+

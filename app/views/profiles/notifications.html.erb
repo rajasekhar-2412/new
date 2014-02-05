@@ -1,0 +1,20 @@
+<h2>Notifications </h2>
+<table style="width: 100%">
+  <thead>
+  <tr>
+    <th>Friend</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @notifications.each do |noti| %>
+      <tr>
+        <td><%= noti.user.username %></td>
+        <td><%= link_to 'Accept',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Added") %></td>
+        <td><%= link_to 'Reject',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Rejected") %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%#= paginate @users %>

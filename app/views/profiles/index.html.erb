@@ -11,7 +11,12 @@
   <tbody>
   <% @users.each do |user| %>
       <tr>
-        <td><%= user.username %></td>
+        <% if current_user%>
+            <td><%= link_to user.username,show_friends_bookmarks_path(:id=>"#{user.id}") %></td>
+        <%else%>
+            <td><%= user.username %></td>
+        <%end%>
+
         <td><%= user.bookmarks.count %></td>
       </tr>
   <% end %>

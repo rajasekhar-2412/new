@@ -16,6 +16,9 @@ class User < ActiveRecord::Base
             uniqueness: {case_sensitive: false},
             format: {with: /\w+/}
 
+  has_many :friendships
+  has_many :friends, :through => :friendships
+
   def to_param
     self.username
   end

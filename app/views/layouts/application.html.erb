@@ -50,6 +50,10 @@
               <li class="divider"></li>
 
               <% if current_user %>
+                  <li><%= link_to 'Notifications', notifications_path %></li>
+                  <li class="divider"></li>
+                  <li><%= link_to 'Friends', friends_path %></li>
+                  <li class="divider"></li>
                   <li><%= link_to 'New Bookmarks', bookmarks_path %></li>
                   <li class="divider"></li>
                   <li><%= link_to 'New Category', new_category_path %></li>
