@@ -20,6 +20,7 @@ class ProfilesController < ApplicationController
       flash[:notice] = "You should be his/her friend to access the bookmarks"
        redirect_to profiles_path
     else
+      @name = params[:name]
       @bookmarks = Bookmark.where("user_id=?",params[:id].to_i)
        respond_to do |format|
          format.html

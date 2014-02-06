@@ -12,7 +12,7 @@
   <% @users.each do |user| %>
       <tr>
         <% if current_user%>
-            <td><%= link_to user.username,show_friends_bookmarks_path(:id=>"#{user.id}") %></td>
+            <td><%= link_to user.username,show_friends_bookmarks_path(:id=>"#{user.id}",:name=>"#{user.username}") %></td>
         <%else%>
             <td><%= user.username %></td>
         <%end%>

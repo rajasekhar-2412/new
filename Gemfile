@@ -29,7 +29,7 @@ gem 'rails_12factor', group: :production
 gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -50,7 +50,10 @@ group :development do
   gem 'meta_request'
   gem 'nifty-generators'
 end
+
 gem 'numbers_in_words'
+gem 'rails3-jquery-autocomplete'
+gem 'jquery-rails', '~> 2.3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

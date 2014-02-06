@@ -33,4 +33,7 @@ class User < ActiveRecord::Base
     end
   end
 
+  def display_name
+    "#{self.username}".camelize
+  end
 end

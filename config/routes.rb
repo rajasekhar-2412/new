@@ -3,7 +3,9 @@ BookmarkApplication::Application.routes.draw do
   resources :customs
   resources :profiles
   resources :categories
-  resources :friendships
+  resources :friendships do
+    get :autocomplete_user_username, :on => :collection
+  end
 
   get "site/index"
   get "site/about"

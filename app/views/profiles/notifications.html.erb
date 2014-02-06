@@ -10,8 +10,8 @@
   <% @notifications.each do |noti| %>
       <tr>
         <td><%= noti.user.username %></td>
-        <td><%= link_to 'Accept',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Added") %></td>
-        <td><%= link_to 'Reject',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Rejected") %></td>
+        <td><%= link_to 'Accept',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Added"), data: {confirm: "Are you sure? "} %></td>
+        <td><%= link_to 'Reject',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Rejected"), data: {confirm: "Are you sure? "} %></td>
       </tr>
   <% end %>
   </tbody>

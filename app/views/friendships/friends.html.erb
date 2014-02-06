@@ -25,20 +25,21 @@
   </tbody>
 </table>
 
-    Search Friend:  <%= text_field_tag :search, params[:search] %>
-<p>
-  <%= submit_tag "Search", :name => nil %>
-</p>
+    Search Friend: <%= autocomplete_field :user,:username, autocomplete_user_username_friendships_path%>
+    <div id="p" style="text-align: center">
+      <%= submit_tag "Search", :name => nil %>
+    </div>
+
 
 <div id="show_friends">
 </div>
 
 <script>
-    $("p").click(function()
+    $("#p").click(function()
     {
-        var name = $( "#search" ).val();
+        var name = $( "#user_username" ).val();
         if (name == ''){
-           alert('Please enter a name');
+            alert('Please enter a name');
             window.location.reload();
         }
         else {
@@ -57,5 +58,6 @@
         }
 
     })
+
 
 </script>
