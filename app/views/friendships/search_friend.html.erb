@@ -13,6 +13,9 @@
       <tr>
         <td><%= buddy.username %></td>
         <td><%= link_to 'Add Friend',create_friend_path(:friend_id=> "#{buddy.id}"), data: {confirm: "Are You Sure?" } %></td>
+        <% if buddy.avatar.file? %>
+            <td><%= image_tag buddy.avatar.url(:thumb) %></td>
+        <%end%>
       </tr>
   <% end %>
   </tbody>

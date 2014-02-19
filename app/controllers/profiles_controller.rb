@@ -27,4 +27,13 @@ class ProfilesController < ApplicationController
        end
     end
   end
+
+  def delete_photo
+    @user = User.where(:id => params[:id].to_i).first
+    @user.avatar = nil
+    @user.save
+    respond_to do |format|
+      format.html {redirect_to profiles_url}
+    end
+  end
 end

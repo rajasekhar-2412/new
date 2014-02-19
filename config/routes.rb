@@ -18,6 +18,7 @@ BookmarkApplication::Application.routes.draw do
   get 'update_friend', to: "friendships#update_friend"
   get 'friends', to: "friendships#friends"
   get 'search_friend', to: "friendships#search_friend"
+  get 'delete_photo', to:"profiles#delete_photo"
   get 'notifications', to: "profiles#notifications"
   get 'show_friends_bookmarks', to:"profiles#show_friends_bookmarks"
 

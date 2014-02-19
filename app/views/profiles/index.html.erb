@@ -5,6 +5,7 @@
   <tr>
     <th>User</th>
     <th># Bookmarks</th>
+    <th> Photo</th>
   </tr>
   </thead>
 
@@ -18,6 +19,14 @@
         <%end%>
 
         <td><%= user.bookmarks.count %></td>
+        <td>
+          <%if user.avatar.file?%>
+              <%= image_tag user.avatar.url(:thumb) %>
+          <%else%>
+          No Photo Found!
+          <%end%>
+
+        </td>
       </tr>
   <% end %>
   </tbody>

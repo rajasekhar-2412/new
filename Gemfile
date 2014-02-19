@@ -4,6 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'kaminari'  #pagination
 
+gem 'bxslider-rails'
+
+gem "paperclip", "~> 3.0"
+#gem 'jquery-sliders-rails'
+
+#gem 'nivo-rails'
 #gem 'gchartrb'
 
 gem 'chartkick'

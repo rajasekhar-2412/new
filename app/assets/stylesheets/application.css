@@ -10,5 +10,10 @@
  *
  *= require_self
  *= require foundation_and_overrides
+ *= require bxslider
  *= require_tree .
  */
+.slider-wrapper {
+    height:100%;
+    width:100%;
+}

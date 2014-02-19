@@ -1,5 +1,19 @@
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
 <% unless current_user %>
+    <div class="slider-wrapper">
+      <ul class="bxslider">
+        <% @images.each do |user| %>
+            <li>
+              <%= image_tag user%>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
     <div class="panel">
       <h1>Share your bookmarks!</h1>
       <p>A simple app to track and share your beloved bookmarks with others.</p>
@@ -52,3 +66,25 @@
     <hr>
     <%= column_chart @users , {library: {title: "User's Login Activity"}}%>
 <% end %>
+
+
+<%#= image_tag randomized_background_image %>
+
+
+
+  <script>
+      $(document).ready(function(){
+          $('.bxslider').bxSlider({
+              auto: true,
+              autoHover: true,
+              adaptiveHeight: true,
+              minSlides: 1,
+              maxSlides: 4,
+              slideWidth: 170,
+              moveSlides: 1,
+              slideMargin: 10
+          });
+      });
+
+  </script>
+
