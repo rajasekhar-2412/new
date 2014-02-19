@@ -20,8 +20,13 @@ class SiteController < ApplicationController
       @bookmarks = Bookmark.where(is_shared: true).order('created_at desc')
     end
 
-    path = "/home/sm/Downloads/My_sample/app/assets/images/"
-    @images=Dir.entries(asset_path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
+
+    #path = "/home/sm/Downloads/My_sample/app/assets/images/"
+    #@images=Dir.entries(asset_path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
+
+    path = "/app/app/assets/images"
+    @images=Dir.entries(path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
+
     #@random_images = images[rand(images.size)]
   end
 end
