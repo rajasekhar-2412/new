@@ -9,8 +9,8 @@ class BookmarksController < ApplicationController
     @custom = current_user.try(:customs).try(:last).try(:fields) || []
     respond_to do |format|
       format.html
-      format.csv { send_data Bookmark.to_csv }
-      format.xls { send_data Bookmark.to_csv(col_sep: "\t")}
+      format.csv { send_data Bookmark.to_csv(@bookmarks) }
+      format.xls { send_data Bookmark.to_csv(@bookmarks,col_sep: "\t")}
     end
   end
 

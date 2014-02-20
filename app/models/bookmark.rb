@@ -11,10 +11,10 @@ class Bookmark < ActiveRecord::Base
 
 
 
-  def self.to_csv(options = {})
+  def self.to_csv(bookmarks,options = {})
     CSV.generate(options) do |csv|
       csv << column_names[1,2].map(&:upcase)
-      all.each do |bookmark|
+      bookmarks.each do |bookmark|
         csv << bookmark.attributes.values_at(*column_names[1,2])
       end
     end
