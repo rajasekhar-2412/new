@@ -48,5 +48,11 @@
 
 <%= link_to 'New Custom Field', new_custom_path, class: "button green awesome" %>
 
-
 <%= paginate @bookmarks, :window => 2%>
+
+<h5>Do You Want To Download Your Bookmarks ?</h5>
+ <%= link_to "CSV", bookmarks_path(format: "csv")%> |
+  <%= link_to "Excel", bookmarks_path(format: "xls") %>
+
+
+

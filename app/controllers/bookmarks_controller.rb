@@ -7,6 +7,11 @@ class BookmarksController < ApplicationController
   def index
     @bookmarks = current_user.bookmarks.page params[:page]
     @custom = current_user.try(:customs).try(:last).try(:fields) || []
+    respond_to do |format|
+      format.html
+      format.csv { send_data Bookmark.to_csv }
+      format.xls { send_data Bookmark.to_csv(col_sep: "\t")}
+    end
   end
 
   # GET /bookmarks/1
@@ -32,7 +37,7 @@ class BookmarksController < ApplicationController
     #raise params.inspect
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.user_id = current_user.id
-       #raise params[:custom].inspect
+    #raise params[:custom].inspect
 
     respond_to do |format|
       if @bookmark.save
@@ -52,11 +57,11 @@ class BookmarksController < ApplicationController
   def update
     respond_to do |format|
       if @bookmark.update(bookmark_params)
-          if @bookmark.custom
-            @custom = @bookmark.custom.update(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
-          else
-            @custom = Custom.create(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
-          end
+        if @bookmark.custom
+          @custom = @bookmark.custom.update(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
+        else
+          @custom = Custom.create(:user_id => current_user.id, :fields => params[:custom], :bookmark_id => @bookmark.id)
+        end
         format.html { redirect_to @bookmark, notice: 'Bookmark was successfully updated.' }
         format.json { head :no_content }
       else
@@ -77,7 +82,7 @@ class BookmarksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
   def set_bookmark
     unless @bookmark = current_user.bookmarks.where(id: params[:id]).first
       flash[:alert] = 'Bookmark not found.'
@@ -85,8 +90,8 @@ class BookmarksController < ApplicationController
     end
   end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bookmark_params  #strong parameters
-      params.require(:bookmark).permit(:title, :url,:category_id, :is_shared)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def bookmark_params  #strong parameters
+    params.require(:bookmark).permit(:title, :url,:category_id, :is_shared)
+  end
 end

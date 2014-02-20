@@ -22,7 +22,6 @@ class SiteController < ApplicationController
 
 
     #path = "/home/sm/Downloads/My_sample/app/assets/images/"
-    #@images=Dir.entries(asset_path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
 
     path = "/app/app/assets/images"
     @images=Dir.entries(path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
