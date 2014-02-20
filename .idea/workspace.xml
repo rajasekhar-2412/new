@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f080597f-c76d-4597-9087-34eb885f644f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bookmark.rb" afterPath="$PROJECT_DIR$/app/models/bookmark.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/bookmarks_controller.rb" />
     </list>
     <ignored path="bookmark-application-master.iws" />
@@ -170,7 +169,7 @@
       <file leaf-file-name="site_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="859" selection-end="859" vertical-scroll-proportion="0.55397725">
+            <state line="25" column="4" selection-start="823" selection-end="823" vertical-scroll-proportion="0.53267044">
               <folding />
             </state>
           </provider>
@@ -188,7 +187,7 @@
       <file leaf-file-name="bookmarks_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="12" column="67" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -992,6 +991,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="67" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bookmark.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="15" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
@@ -999,16 +1005,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookmarks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="859" selection-end="859" vertical-scroll-proportion="0.55397725">
+        <state line="25" column="4" selection-start="823" selection-end="823" vertical-scroll-proportion="0.53267044">
           <folding />
         </state>
       </provider>
