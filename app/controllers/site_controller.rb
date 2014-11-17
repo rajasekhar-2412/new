@@ -21,9 +21,9 @@ class SiteController < ApplicationController
     end
 
 
-    #path = "/home/sm/Downloads/My_sample/app/assets/images/"
+    path = "/home/rajasekhar/My_Project/new/app/assets/images/"
 
-    path = "/app/app/assets/images"
+    # path = "/app/app/assets/images"
     @images=Dir.entries(path).delete_if{|a| a == '.' || a== ".." || a==".keep"}
 
     #@random_images = images[rand(images.size)]

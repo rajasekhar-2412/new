@@ -15,8 +15,58 @@
 //= require jquery-ui
 //= require autocomplete-rails
 //= require foundation
+//= require chat
+//= require private_pub
 //= require turbolinks
 //= require bxslider
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+    $("#text").hide();
+});
+
+$('#user_password').keyup(function(e) {
+    $("#text").show();
+    $('#passstrength').show();
+    var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+    var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+    var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+    if (false == enoughRegex.test($(this).val())) {
+        $('#passstrength').removeClass('strong').removeClass('medium').html('Too Short');
+    } else if (strongRegex.test($(this).val())) {
+        $('#passstrength').html('Strong!').removeClass('medium').addClass('strong');
+    } else if (mediumRegex.test($(this).val())) {
+        $('#passstrength').html('Medium!').removeClass('strong').addClass('medium');
+    } else {
+        $('#passstrength').removeClass('strong').removeClass('medium').html('Weak!');
+    }
+    return true;
+});
+
+$('#user_password').blur(function() {
+    $("#text").hide();
+    $('#passstrength').hide();
+});
+
+$('#user_password_confirmation').keyup(function() {
+    $('#passwd_check').show();
+   var pwd = $('#user_password').val();
+   if ($(this).val() == pwd){
+       $('#passwd_check').html('Passwords Matching').removeClass('error').addClass('strong');
+   }
+    else if (pwd == '') {
+       $('#passwd_check').html('Password should not be empty').removeClass('strong').addClass('error');
+   }
+    else{
+           $('#passwd_check').html('Confirmation Password Not Matching With Password').addClass('error');
+       }
+});
+
+$('#user_password_confirmation').blur(function() {
+    $('#passwd_check').hide();
+});
+
+
+

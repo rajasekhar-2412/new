@@ -11,8 +11,8 @@
   <tbody>
   <% @buddies.each do |buddy| %>
       <tr>
-        <td><%= buddy.username %></td>
-        <td><%= link_to 'Add Friend',create_friend_path(:friend_id=> "#{buddy.id}"), data: {confirm: "Are You Sure?" } %></td>
+        <td><%= buddy.username.capitalize %></td>
+        <td><%= link_to 'Add Friend',create_friend_path(:friend_id=> "#{buddy.id}"), data: {confirm: "Are You Sure?" }, :class => "button" %></td>
         <% if buddy.avatar.file? %>
             <td><%= image_tag buddy.avatar.url(:thumb) %></td>
         <%end%>

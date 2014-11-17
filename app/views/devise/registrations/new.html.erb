@@ -1,3 +1,4 @@
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <h2>Sign up</h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -7,7 +8,9 @@
     <%= f.input :username, :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
     <%= f.input :password, :required => true %>
+    <span id ="text">Password Strength: </span><span id="passstrength"></span>
     <%= f.input :password_confirmation, :required => true %>
+    <span id="passwd_check"></span>
 
   </div>
 

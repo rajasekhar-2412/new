@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
 
   has_many :friendships
   has_many :friends, :through => :friendships
+  has_many :conversations, :foreign_key => :sender_id
 
   def to_param
     self.username

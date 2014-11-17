@@ -13,7 +13,9 @@
       <% end %>
 
       <%= f.input :password, :autocomplete => "off", :hint => "leave it blank if you don't want to change it", :required => false %>
+      <span id ="text">Password Strength: </span><span id="passstrength"></span>
       <%= f.input :password_confirmation, :required => false %>
+      <span id="passwd_check"></span>
       <%= f.input :current_password, :hint => "we need your current password to confirm your changes", :required => true %>
       <br>
       Upload Photo:

@@ -17,3 +17,29 @@
     height:100%;
     width:100%;
 }
+
+#passstrength {
+    color:red;
+    font-family:verdana;
+    font-size:10px;
+    font-weight:bold;
+}
+
+#text {
+    font-family:verdana;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.strong {
+    color: green !important;
+    padding-bottom: 9px !important;
+}
+
+.medium {
+    color: blue !important;
+}
+.error{
+    color: red !important;
+    padding-bottom: 9px !important;
+}

@@ -6,20 +6,29 @@
   <tr>
     <th>Friend</th>
     <th></th>
+    <th></th>
   </tr>
   </thead>
 
   <tbody>
   <% @friends_sent.each do |friend| %>
       <tr>
-        <td><%= friend.friend.username %></td>
-        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.friend_id}", :for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?"} %></td>
+        <td><%= friend.friend.username.capitalize %></td>
+        <td>
+          <%= link_to "Send Message", "#", class: "button start-conversation",
+                      "data-sid" => current_user.id, "data-rip" => friend.user.id %>
+        </td>
+        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.friend_id}", :for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?"}, :class => "button secondary" %></td>
       </tr>
   <% end %>
   <% @friends_approved.each do |friend| %>
       <tr>
-        <td><%= friend.user.username %></td>
-        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.user.id}",:for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?" } %></td>
+        <td><%= friend.user.username.capitalize %></td>
+        <td>
+          <%= link_to "Send Message", "#", class: "button start-conversation",
+                      "data-sid" => current_user.id, "data-rip" => friend.user.id %>
+        </td>
+        <td><%= link_to 'Remove',update_friend_path(:friend_id=> "#{friend.user.id}",:for => "Rejected",:id=>friend.id), data: { confirm: "Are you sure?" }, :class => "button secondary" %></td>
       </tr>
   <% end %>
   </tbody>

@@ -2,16 +2,16 @@
 <table style="width: 100%">
   <thead>
   <tr>
-    <th>Friend</th>
+    <th colspan="3">Friend</th>
   </tr>
   </thead>
 
   <tbody>
   <% @notifications.each do |noti| %>
       <tr>
-        <td><%= noti.user.username %></td>
-        <td><%= link_to 'Accept',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Added"), data: {confirm: "Are you sure? "} %></td>
-        <td><%= link_to 'Reject',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Rejected"), data: {confirm: "Are you sure? "} %></td>
+        <td><%= noti.user.username.capitalize %></td>
+        <td><%= link_to 'Accept',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Added"), data: {confirm: "Are you sure? "}, :class => "button" %></td>
+        <td><%= link_to 'Reject',update_friend_path(:friend_id=> "#{noti.user.id}", :for => "Rejected"), data: {confirm: "Are you sure? "}, :class => "button secondary" %></td>
       </tr>
   <% end %>
   </tbody>

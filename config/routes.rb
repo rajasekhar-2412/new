@@ -28,6 +28,10 @@ BookmarkApplication::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'site#index'
 
+  resources :conversations do
+    resources :messages
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
