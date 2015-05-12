@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141027091152) do
+ActiveRecord::Schema.define(version: 20150512113547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "assets", force: true do |t|
+    t.string   "asset_type"
+    t.integer  "asset_id"
+    t.text     "properties"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "bookmarks", force: true do |t|
     t.string   "title"
@@ -64,6 +72,21 @@ ActiveRecord::Schema.define(version: 20141027091152) do
     t.boolean  "is_accept",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "laboratories", force: true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "libraries", force: true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "bookable"
   end
 
   create_table "messages", force: true do |t|

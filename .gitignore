@@ -14,7 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-.idea/.generators
+/.idea/.generators
 .idea/.rakeTasks
 .idea/My_sample.iml
-.idea/workspace.xml
+/.idea/workspace.xml

@@ -1,5 +1,11 @@
 
 BookmarkApplication::Application.routes.draw do
+  resources :laboratories
+
+  resources :libraries
+
+  resources :assets
+
   resources :customs
   resources :profiles
   resources :categories

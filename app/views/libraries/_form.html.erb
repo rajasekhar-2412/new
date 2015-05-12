@@ -1,0 +1,38 @@
+<%= simple_form_for(@library) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :code %>
+    <%= f.input :name %>
+    <%= f.input :bookable, as: :boolean, checked_value: true, unchecked_value: false,:input_html => {:onchange => "return checkBookable();"} %>
+  </div>
+
+    <div class="bookable">
+      <%= f.simple_fields_for :properties do |c| %>
+          <%= c.input :name%>
+      <% end %>
+    </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+
+<% end %>
+
+<script>
+
+    $(document).ready(function() {
+        $(".bookable").hide();
+    });
+
+  function checkBookable(){
+
+      if ($("#library_bookable").is(":checked")){
+            $(".bookable").show();
+      }
+      else {
+           $(".bookable").hide();
+      }
+
+  }
+</script>
